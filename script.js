@@ -22,10 +22,6 @@ async function searchJSON() {
         currentResults = data.filter(item => item.title.toLowerCase().includes(query));
         currentPage = 0; // Reset pagination
 
-        // Save to localStorage
-        localStorage.setItem('searchQuery', query);
-        localStorage.setItem('searchResults', JSON.stringify(currentResults));
-
         // Display initial results
         displayResults();
     } catch (error) {

@@ -43,6 +43,10 @@ form input{
     border-radius: 8px;
 }
 
+.form-control{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 
 ::placeholder{
     content: '';
@@ -84,5 +88,5 @@ form button{
 }
 
 .row{
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
