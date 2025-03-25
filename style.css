@@ -90,3 +90,44 @@ form button{
 .row{
     padding: 30px 20px;
 }
+
+/* media query 769px */
+@media screen and (max-width: 769px) {
+    .row{
+        padding: 30px 50px;
+    }
+}
+
+/* media query 577px */
+@media screen and (max-width: 577px) {
+    .row{
+        padding: 30px;
+    }
+
+    .map{
+        padding-top: 40px;
+    }
+}
+
+
+/* media query 426px */
+@media screen and (max-width: 426px) {
+    form button {
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+}
+
+/* media query 376px */
+@media screen and (max-width: 376px) {
+    .row{
+        padding: 20px;
+    }
+}
+
+/* media query 321px */
+@media screen and (max-width: 321px) {
+    .row{
+        padding: 15px;
+    }
+}

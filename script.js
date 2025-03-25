@@ -73,8 +73,7 @@ function displayResults() {
                     User ID: ${item.userId}<br>
                     Completed: ${item.completed}
                 </p>
-            </div>
-        `;
+            </div>`;
         mapContainer.appendChild(itemDiv);
     });
     mapView.appendChild(mapContainer);
@@ -83,17 +82,18 @@ function displayResults() {
     searchMoreBtn.style.display = end < currentResults.length ? 'block' : 'none';
 }
 
-// Load saved data on page load
-function loadSavedData() {
-    const savedQuery = localStorage.getItem('searchQuery');
-    const savedResults = localStorage.getItem('searchResults');
+// // Load saved data on page load
+// function loadSavedData() {
+//     const savedQuery = localStorage.getItem('searchQuery');
+//     const savedResults = localStorage.getItem('searchResults');
 
-    if (savedQuery && savedResults) {
-        searchBox.value = savedQuery;
-        currentResults = JSON.parse(savedResults);
-        displayResults();
-    }
-}
+//     if (savedQuery && savedResults) {
+//         searchBox.value = savedQuery;
+//         currentResults = JSON.parse(savedResults);
+//         displayResults();
+//     }
+// }
+
 
 // Event Listener for Search
 searchForm.addEventListener('submit', (e) => {
@@ -107,5 +107,5 @@ searchMoreBtn.addEventListener('click', () => {
     displayResults();
 });
 
-// Load saved data when the page loads
-window.addEventListener('load', loadSavedData);
+// // Load saved data when the page loads
+// window.addEventListener('load', loadSavedData);
