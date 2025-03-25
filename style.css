@@ -88,7 +88,8 @@ form button{
 }
 
 .row{
-    padding: 30px 20px;
+    padding: 30px 80px;
+    gap: 40;
 }
 
 /* media query 769px */
